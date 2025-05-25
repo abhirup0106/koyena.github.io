@@ -38,15 +38,16 @@ body {
     transform: scale(1.1);
 }
 .gift-box::before {
-    content: '';
+    content: 'Tap to Open';
     position: absolute;
-    top: -20px;
+    top: 50%;
     left: 50%;
-    width: 60px;
-    height: 20px;
-    background: #ff4d4d;
-    transform: translateX(-50%);
-    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    z-index: 1;
 }
 .gift-box::after {
     content: '';
@@ -58,6 +59,17 @@ body {
     background: #ff4d4d;
     transform: translateY(-50%);
     border-radius: 5px;
+}
+.gift-box::before:not(.tap-text) {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 60px;
+    height: 20px;
+    background: #ff4d4d;
+    transform: translateX(-50%);
+    border-radius: 10px;
 }
 #wish-page {
     background: url('back.jpg') no-repeat center center fixed;
