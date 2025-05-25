@@ -16,10 +16,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: url('back.jpg') no-repeat center center fixed;
+    
     background-size: cover;
 }
 #gift-page {
+    background-color:Black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +61,7 @@ body {
     border-radius: 5px;
 }
 #wish-page {
+    background: url('back.jpg') no-repeat center center fixed;
     display: none;
     flex-direction: column;
     justify-content: center;
