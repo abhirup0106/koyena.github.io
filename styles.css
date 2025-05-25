@@ -16,11 +16,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    
     background-size: cover;
 }
 #gift-page {
-    background-color:Black;
+    background: linear-gradient(180deg, #000000, #1c2526);
     display: flex;
     justify-content: center;
     align-items: center;
